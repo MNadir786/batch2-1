@@ -5,7 +5,10 @@ node('maven'){
     }
     stage('runningScript'){
         
-        echo " RunningtheScript"
+        echo " Running the Script"
         sh "sh test.sh"
 }
+    stage('Final Stage'){
+        echo "Completing the Job"
+    }
 }
